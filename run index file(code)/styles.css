@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #022444; /* Dark background */
+    color: #ecf0f1; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes full height */
+    margin: 0;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    flex: 1; /* Allow container to grow and fill available space */
+    text-align: center;
+    background: rgba(2, 41, 73, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px; /* Wider container */
+    margin: 20px auto; /* Center the container */
+}
+
+.button-container {
+    margin-bottom: 20px; /* Space between buttons and simulation */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e74c3c; /* Red button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 10px; /* Space between buttons */
+}
+
+button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.simulation {
+    display: flex;
+    justify-content: space-between; /* Space between outgoing and incoming frames */
+    margin-top: 20px;
+}
+
+.buffer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    max-height: 300px; /* Adjust height for buffers */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 45%; /* Adjust width for buffers */
+    border: 1px solid #333; /* Add border for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(52, 73, 94, 0.8); /* Slightly lighter background for buffers */
+}
+
+.frame {
+    margin: 5px;
+    padding: 10px;
+    background-color: #2980b9; /* Frame color */
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.frame:hover {
+    transform: scale(1.05); /* Grow effect on hover */
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #d9534f; /* Status color */
+    transition: opacity 0.5s;
+}
+
+footer {
+    background-color: #050329; /* Black background for footer */
+    width: 100%; /* Full width footer */
+    height: 40px; /* Fixed height for footer */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.signature {
+    font-size: 14px; /* Font size for the signature */
+    color: #ecf0f1; /* Light text color */
+    margin: 0; /* Remove margin */
+}
